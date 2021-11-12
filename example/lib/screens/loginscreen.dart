@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import'package:firebase_auth/firebase_auth.dart';
 
 import 'arviewscreen.dart';
+import 'itemlistscreen.dart';
 class LoginScreen extends StatefulWidget {
   @override
   _LoginScreenState createState() => _LoginScreenState();
@@ -14,7 +15,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pinkAccent,
+      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
@@ -43,12 +44,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderSide:
-                  BorderSide(color: Colors.white, width: 1.0),
+                  BorderSide(color: Colors.pink, width: 1.0),
                   borderRadius: BorderRadius.all(Radius.circular(32.0)),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide:
-                  BorderSide(color: Colors.white, width: 2.0),
+                  BorderSide(color: Colors.pinkAccent, width: 2.0),
                   borderRadius: BorderRadius.all(Radius.circular(32.0)),
                 ),
               ),
@@ -72,12 +73,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderSide:
-                  BorderSide(color: Colors.white, width: 1.0),
+                  BorderSide(color: Colors.pink, width: 1.0),
                   borderRadius: BorderRadius.all(Radius.circular(32.0)),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide:
-                  BorderSide(color: Colors.white, width: 2.0),
+                  BorderSide(color: Colors.pinkAccent, width: 2.0),
                   borderRadius: BorderRadius.all(Radius.circular(32.0)),
                 ),
               ),
@@ -86,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 8,
             ),
             TextButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>ArViewScreen()
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ItemListScreen()
                 ,));
             }, child: Text('Forgot Password?', style: TextStyle(
               fontSize: 20,
@@ -107,7 +108,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       final user =await _auth.signInWithEmailAndPassword(email: email, password: password);
                       if(user!=null)
                       {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>ArViewScreen()
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>ItemListScreen()
                           ,));
                       }}
                     catch(e){

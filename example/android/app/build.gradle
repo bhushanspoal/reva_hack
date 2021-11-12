@@ -91,3 +91,5 @@ sceneform.asset('sampledata/fox_face.fbx',
         'sampledata/fox_face_material.mat',
         'sampledata/fox_face.sfa',
         'src/main/assets/fox_face')
+
+apply plugin: 'com.google.gms.google-services'

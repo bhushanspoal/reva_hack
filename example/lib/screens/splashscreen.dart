@@ -1,4 +1,6 @@
 import 'package:arcore_flutter_plugin_example/screens/itemlistscreen.dart';
+
+import 'package:arcore_flutter_plugin_example/screens/welcomescreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
@@ -12,7 +14,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(seconds: 8,
-    navigateAfterSeconds: ItemListScreen(),
+    navigateAfterSeconds: WelcomeScreen(),
     title: Text('intérieur',
     style: TextStyle(
       fontWeight: FontWeight.bold,

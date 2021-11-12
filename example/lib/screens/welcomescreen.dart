@@ -22,10 +22,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 Container(
                   child: Image.asset('items/icon.png',
                   ),
-                  height: 60.0,
+                  height: 100.0,
                 ),
                 Text(
-                  '   Intérieur',
+                  '  Intérieur',
                   style: TextStyle(
                     fontSize: 45.0,
                     fontWeight: FontWeight.w900,

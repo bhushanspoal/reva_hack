@@ -118,6 +118,15 @@ final List<ItemModel> items=[
             ],
           ),
           ),
+          SizedBox(height: 10,),
+          Padding(
+            padding: const EdgeInsets.only(right: 130),
+            child: Text('Welcome,  Bhushan',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+            ),),
+          ),
           Expanded(child: Padding(
             padding: EdgeInsets.all(30),
             child: Container(
@@ -150,6 +159,7 @@ final List<ItemModel> items=[
                     Container(
                      width: 60,
                      child: Text(items[index].price.toString(), style: TextStyle(fontSize: 14,color:Colors.red),),
+                      padding: EdgeInsets.only(left: 10),
                     ),
                   ],),
                 );
@@ -161,3 +171,5 @@ final List<ItemModel> items=[
     );
   }
 }
+
+

@@ -4,6 +4,6 @@ Our aim here is to build a framework using flutter AR plugins for android to 3D 
 In our approach we have come up with the proposition of an application in which , the app automatically scales products, based on room dimensions and visualize a product within a space, the application scans the expanse of a room through the user’s phone camera. Users can browse through over list of products on an online database, to make their selections. Once chosen, users must point the device to the desired spot in a room, then drag and drop the selected product onto the space.
 
 TECH STACK USED:
-  FLUTTER 
-  FIREBASE
+  FLUTTER, 
+  FIREBASE and
   AR Core
